@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.bayer.turfid.CustomTextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView7"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="17sp"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/black80" />
+    <com.bayer.turfid.CustomTextView
+        android:text=" - "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView41"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="17sp"
+        android:layout_toRightOf="@id/textView7"
+        android:textColor="@color/black80"
+         />
+
+    <com.bayer.turfid.CustomTextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="17sp"
+        android:layout_toRightOf="@+id/textView41"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black80"
+
+         />
+
+    <com.bayer.turfid.CustomTextView
+        android:text=">"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:padding="10dp"
+        android:textSize="17sp"
+        android:textColor="@color/black80"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9ED1F6</color>
+    <color name="colorPrimaryDark">#9ED1F6</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="buttontextcolor">#2f4f4f</color>
+    <color name="layoutcolor">#ebebeb</color>
+    <color name="layoutborder">#CAC8CB</color>
+    <color name="white">#ffffff</color>
+    <color name="manualMapping">#7d7d7d</color>
+    <color name="stepcolor">#e0e0e0</color>
+    <color name="topTextView">#01a0e2</color>
+    <color name="dateTextColor">#6C6C6C</color>
+    <color name="layoutBackGround">#E8E8E8</color>
+    <color name="countryTextColor">#424242</color>
+    <color name="degreeTextColor">#4d4d4d</color>
+    <color name="humidityTextColor">#000000</color>
+    <color name="blackVal">#333333</color>
+    <color name="black80">#333333</color>
+<color name="gridColor">#ebebeb</color>
+    <color name="sdf">#ababab</color>
+    <color name="result5BlueTxt">#00a3de</color>
+</resources>

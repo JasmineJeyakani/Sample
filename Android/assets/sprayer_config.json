@@ -1,0 +1,37 @@
+{
+    "sprayer_make":
+    
+        [{
+             "name": "Birchmeier",
+             "sprayer_model": ["15 Litre", "20 Litre"]
+         },{
+             "name": "Chapin",
+             "sprayer_model": ["Pro Series 15 Litre #62000", "Pro Series 15 Litre #61400", "Pro Series 15 Litre #61800", "Pro Series 15 Litre #61900"]
+         },{
+             "name": "SHURflo",
+             "sprayer_model": ["SRS-600","SRS-800"]
+         }],
+    
+    "name_of_product":
+    
+         [{
+            "name": "Chipco Green", "application_rate": "20", "water_volume": "500","water_volume_range": "500"
+         },{
+            "name": "Dedicate", "application_rate": "1", "water_volume": "450","water_volume_range": "400-500"
+         },{
+            "name": "Interface", "application_rate": "10", "water_volume": "500",
+            "water_volume_range": "400-600"
+         },{
+            "name": "Scorpio", "application_rate": "0.7", "water_volume": "450",
+          "water_volume_range": "400-500"
+         }],
+  "name_of_productBoom":
+
+  [{
+    "name": "Finale 150 - Seedlings of all species (vehicle mounted application)", "application_rate": "3", "water_volume": "300","water_volume_range": "200-400"
+  },{
+    "name": "Finale 150 - Established annuals and perennials (vehicle mounted application)", "application_rate": "5", "water_volume": "300", "water_volume_range": "200-400"
+
+
+  }]
+}

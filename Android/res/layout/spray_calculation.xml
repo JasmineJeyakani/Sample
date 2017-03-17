@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_bg"
+    tools:context="com.bayer.turfid.SprayCalculationActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/topTextView"
+        android:id="@+id/title"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/bayer_logo"
+            android:id="@+id/logo_img"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp" />
+
+        <com.bayer.turfid.CustomTextViewBold
+
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center_vertical|center"
+            android:text="Spray Calculation"
+            android:paddingRight="60dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/blacklayout"
+        android:orientation="vertical"
+        android:background="@color/background_floating_material_dark"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:paddingRight="20dp"
+        android:gravity="center">
+
+        <com.bayer.turfid.CustomButton
+            android:layout_width="@dimen/setingsavebtnwidth"
+            android:text="Continue >"
+            android:id="@+id/continuebtn"
+            android:background="@drawable/button_background"
+            android:textSize="@dimen/txt"
+            android:textColor="#FEFEFE"
+            android:textStyle="bold"
+            android:layout_gravity="right"
+            android:layout_height="35dp"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_above="@+id/blacklayout"
+        android:layout_below="@+id/title"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp">
+
+
+        <com.bayer.turfid.CustomTextViewBold
+            android:text="Create a new Golf Club"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/saved_area_button"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:id="@+id/createClub"
+            android:layout_centerHorizontal="true"/>
+
+        <com.bayer.turfid.CustomTextView
+            android:id="@+id/clubname"
+            android:layout_below="@+id/createClub"
+            android:layout_width="wrap_content"
+
+            android:inputType="textPersonName"
+
+            android:hint="Choose Golf Club"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/box"
+            android:padding="8dp"
+            android:layout_height="43dp"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:textAlignment="viewStart"/>
+
+        <com.bayer.turfid.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/clubarea"
+            android:inputType="textPersonName"
+            android:id="@+id/date"
+            android:hint="Date of Calibration"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/box"
+            android:padding="8dp"
+            android:textAlignment="viewStart"
+            android:layout_centerHorizontal="true"
+            android:layout_height="43dp"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="#333333"
+            />
+        <com.bayer.turfid.CustomEditText
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/date"
+            android:inputType="textPersonName"
+            android:id="@+id/sprayermake"
+            android:hint="Sprayer Make"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/box"
+            android:padding="8dp"
+            android:layout_height="43dp"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:textAlignment="viewStart"/>
+        <com.bayer.turfid.CustomEditText
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/sprayermake"
+            android:inputType="textPersonName"
+            android:id="@+id/spraymodel"
+            android:hint="Sprayer Model"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/box"
+            android:padding="8dp"
+            android:layout_height="43dp"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:imeOptions="actionDone"
+            android:textAlignment="viewStart"/>
+        <com.bayer.turfid.CustomEditText
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/spraymodel"
+            android:inputType="textPersonName"
+            android:id="@+id/pesticide"
+            android:hint="Pesticide you are using"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/box"
+            android:padding="8dp"
+            android:layout_height="43dp"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:textAlignment="viewStart"
+
+            />
+
+        <com.bayer.turfid.CustomEditText
+            android:layout_width="wrap_content"
+            android:inputType="textPersonName"
+            android:id="@+id/clubarea"
+            android:hint="Area Name"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/box"
+            android:padding="8dp"
+            android:layout_height="43dp"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:textAlignment="viewStart"
+            android:imeOptions="actionDone"
+            android:layout_below="@+id/clubname"
+
+
+
+
+
+
+            />
+        <!--<com.bayer.turfid.CustomEditText-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:inputType="textPersonName"-->
+            <!--android:id="@+id/clubareaedit"-->
+            <!--android:hint="Area Name"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:background="@drawable/box"-->
+            <!--android:padding="8dp"-->
+            <!--android:layout_height="43dp"-->
+            <!--android:textSize="14sp"-->
+            <!--android:gravity="center"-->
+            <!--android:focusable="true"-->
+            <!--android:textColor="#333333"-->
+            <!--android:textAlignment="viewStart"-->
+            <!--android:imeOptions="actionDone"-->
+            <!--android:layout_below="@+id/clubname"-->
+            <!--android:visibility="gone"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true" />-->
+
+
+    </RelativeLayout>
+</RelativeLayout>

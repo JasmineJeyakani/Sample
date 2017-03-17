@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    	<TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/top_blue"
+        android:drawableRight="@drawable/bayer_logo"
+        android:paddingRight="5dp"
+        android:paddingTop="20dp"
+        android:text="@string/contact"
+        android:textColor="#ffffff"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+ -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/home_bg">
+    
+             
+    <WebView
+    		    android:id="@+id/contactView"
+    		    android:layout_width="fill_parent"
+    		    android:layout_height="fill_parent"
+    		    android:layout_below="@+id/title"
+    		    android:linksClickable="true"
+    		    android:autoLink="web|email"
+    		    android:background="@color/layoutBackGround"
+      />
+    
+    
+<!--      <TextView
+	    android:id="@+id/contactView"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+		android:layout_margin="10dp"
+		android:layout_marginBottom="10dp"
+		android:linksClickable="true"
+		android:gravity="center"
+		android:textColor="@android:color/black"
+		android:autoLink="web|email"
+	    android:background="@drawable/screen_background"
+	    android:layout_below="@+id/title"/>
+ -->     
+</RelativeLayout>
+<!-- </LinearLayout>
+ -->

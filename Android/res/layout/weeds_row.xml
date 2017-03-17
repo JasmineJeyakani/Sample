@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/weed_row_parent"
+	android:layout_width="fill_parent"
+	android:layout_height="70dp"
+	android:background="@drawable/table_center"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+<ImageView
+	android:id="@+id/blue_arrow"
+	android:layout_width="30dp"
+	android:layout_height="30dp"
+	android:layout_centerVertical="true"
+	android:layout_alignParentRight="true"
+	android:layout_marginRight="10dp"
+	android:src="@drawable/blue_arrowold"
+	android:scaleType="centerInside"/>
+<com.bayer.turfid.CustomTextView
+	android:id="@+id/weedName"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+    android:textSize="14dp"
+    android:textColor="@android:color/black"
+	android:layout_alignParentTop="true"
+	android:layout_alignLeft="@+id/weedFamily"
+	android:layout_marginTop="5dp"
+	android:layout_marginBottom="10dp"
+	android:layout_marginRight="30dp"/>
+<com.bayer.turfid.CustomTextViewBold
+	android:id="@+id/productName"
+	android:layout_width="wrap_content"
+	android:layout_height="fill_parent"
+    android:textSize="14dp" 
+    android:textColor="@android:color/black"
+	android:layout_toRightOf="@+id/weedImage"
+	android:layout_marginRight="30dp"
+	android:layout_marginBottom="2dp" android:gravity="center_vertical|center_horizontal"
+	android:paddingLeft="10dp" />
+<com.bayer.turfid.CustomTextView
+	android:id="@+id/weedFamily"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+    android:textSize="12dp" 
+    android:textColor="@android:color/darker_gray"
+    android:textStyle="italic"
+	android:layout_alignParentBottom="true"
+	android:layout_toRightOf="@+id/weedImage"
+	android:layout_marginRight="30dp"
+	android:layout_marginTop="15dp"
+	android:layout_marginBottom="2dp"/>
+<ImageButton
+	android:id="@+id/weedImage"
+	android:layout_width="70dp"
+	android:layout_height="70dp"
+	android:layout_marginRight="5dp"
+	android:scaleType="center"
+	android:background="@android:color/transparent"
+	android:layout_alignParentLeft="true"
+	android:layout_centerInParent="true"
+	android:paddingLeft="5dp" />
+</RelativeLayout>
+

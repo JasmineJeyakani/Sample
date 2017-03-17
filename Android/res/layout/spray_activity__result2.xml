@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_bg"
+    tools:context="com.bayer.turfid.SprayActivity_Result2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/textviewLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/topTextView"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="true"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/bayer_logo"
+            android:id="@+id/logo_img"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp" />
+
+        <com.bayer.turfid.CustomTextViewBold
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+
+            android:text="Spray Calculation"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingRight="60dp"
+            android:layout_height="60dp" />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_below="@id/textviewLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="85dp"
+        android:orientation="vertical"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignWithParentIfMissing="false"
+        android:background="@drawable/teviewcorners"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/imageView4"
+            android:layout_gravity="center"
+            android:background="@drawable/tick" />
+
+        <com.bayer.turfid.CustomTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Result 2"
+            android:id="@+id/result1txt"
+            android:layout_gravity="center"
+            android:textColor="#555555"
+            android:textSize="22dp"
+            android:textStyle="normal|bold" />
+
+
+        <com.bayer.turfid.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Actual Water Volume Output"
+                android:id="@+id/actualvolumetxt"
+                android:textColor="#464646"
+            android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+            android:textSize="17sp" />
+
+            <com.bayer.turfid.CustomTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0000L/HA"
+                android:id="@+id/resultlha"
+                android:layout_gravity="center"
+                android:textColor="#555555"
+                android:textSize="17sp"
+                android:textStyle="normal|bold" />
+
+            <com.bayer.turfid.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="1dp"
+                android:padding="3dp"
+                android:text="@string/result2txt"
+                android:id="@+id/result2txtview"
+                android:textColor="#464646"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="10dp"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+
+            <!--<LinearLayout-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:background="@drawable/box"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_height="75dp">-->
+
+                <!--<com.bayer.turfid.CustomButton-->
+                    <!--android:text="Continue >"-->
+                    <!--android:id="@+id/skipresult2"-->
+                    <!--android:background="@drawable/saved_area_button"-->
+                    <!--android:textSize="@dimen/txt"-->
+                    <!--android:textColor="#FEFEFE"-->
+                    <!--android:gravity="center"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:layout_gravity="right"-->
+                    <!--android:layout_marginTop="13dp"-->
+                    <!--android:layout_width="120dp"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:layout_marginBottom="13dp"-->
+                    <!--android:layout_marginRight="15dp" />-->
+
+                <!--<com.bayer.turfid.CustomTextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="If not, click CONTINUE to go to the next step."-->
+                    <!--android:id="@+id/textView17"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:textColor="#464646"-->
+                    <!--android:gravity="center" />-->
+            </LinearLayout>
+
+        <!--</LinearLayout>-->
+
+
+
+
+    <RelativeLayout
+        android:background="@color/background_floating_material_dark"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:paddingRight="25dp"
+        android:paddingLeft="25dp">
+
+
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/leftarrowknapsack"
+                    android:src="@drawable/back_calc"
+                    android:layout_centerVertical="true"
+
+                    />
+
+                <com.bayer.turfid.CustomButton
+                    android:text="Continue >"
+                    android:id="@+id/skipresult2"
+                    android:background="@drawable/saved_area_button"
+                    android:textSize="@dimen/txt"
+                    android:textColor="#FEFEFE"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"
+                   android:layout_alignParentEnd="true"
+                    android:layout_width="120dp"
+                    android:layout_height="30dp"
+                    />
+
+
+
+            <!--<com.bayer.turfid.CustomButton-->
+                <!--android:text="Continue >"-->
+                <!--android:background="@drawable/button_background"-->
+                <!--android:textSize="@dimen/txt"-->
+                <!--android:textColor="#FEFEFE"-->
+                <!--android:id="@+id/continueresult2"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:layout_width="120dp"-->
+                <!--android:layout_height="25dp" />-->
+        </RelativeLayout>
+
+
+</RelativeLayout>

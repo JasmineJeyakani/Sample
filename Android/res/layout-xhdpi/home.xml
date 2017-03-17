@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/home_bg">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+
+        android:background="@color/topTextView"
+        android:id="@+id/title"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="@dimen/titlelayoutHeight">
+
+        <ImageView
+            android:layout_width="@dimen/titleImageWidth"
+            android:layout_height="@dimen/titleImageHeight"
+            android:src="@drawable/bayer_logo"
+            android:id="@+id/img_logo"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/titleImageMargin" />
+
+        <com.bayer.turfid.CustomTextViewBold
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Turf ID"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/titleTxtSize"
+            android:textStyle="bold"
+            android:gravity="center_vertical|center"
+            android:layout_weight="0.5"
+            android:paddingLeft="40dp" />
+        <ImageView
+            android:src="@drawable/searchico"
+            android:id="@+id/searchbtn"
+            android:layout_weight="0.2"
+            android:layout_gravity="center"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/hmeLayoutmargin"
+        android:layout_marginRight="@dimen/hmeLayoutmargin">
+
+        <!--<Button-->
+        <!--android:id="@+id/aboutUs"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_alignLeft="@+id/weedsTxtView"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_marginBottom="20dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:background="@drawable/about_bg"-->
+        <!--android:drawableLeft="@drawable/aboutus_small"-->
+        <!--android:drawablePadding="20dp"-->
+        <!--android:drawableRight="@drawable/blue_arrow"-->
+        <!--android:gravity="left|center"-->
+        <!--android:paddingLeft="5dp"-->
+        <!--android:paddingRight="15dp"-->
+        <!--android:text="@string/about"-->
+        <!--android:textColor="#2f4f4f"-->
+        <!--android:textSize="20dp"-->
+        <!--android:typeface="serif" />-->
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hmeBtnHeight"
+            android:background="@drawable/table_top"
+            android:id="@+id/weedsTxtViewl"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:weightSum="1">
+
+            <com.bayer.turfid.CustomTextView
+                android:id="@+id/weedsTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/imageView6"
+                android:text="@string/weeds"
+                android:textColor="@color/buttontextcolor"
+                android:textSize="@dimen/hmeBtnTxtSize"
+                android:textAlignment="textStart"
+                />
+
+            <ImageView
+                android:src="@drawable/blue_arrow"
+                android:id="@+id/imageView7"
+                android:layout_marginRight="20dp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center_vertical"
+                android:layout_width="@dimen/hmeArrowresol"
+                android:layout_height="@dimen/hmeArrowresol"
+                />
+
+            <ImageView
+                android:src="@drawable/weeds"
+                android:id="@+id/imageView6"
+                android:visibility="visible"
+                android:layout_height="wrap_content"
+                android:layout_width="110dp"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="9dp"
+                android:paddingBottom="9dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@+id/weedsTxtViewl"
+            android:id="@+id/diseasesTxtViewl"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hmeBtnHeight"
+            android:background="@drawable/table_center"
+            android:weightSum="1">
+
+            <ImageView
+                android:src="@drawable/diseases"
+                android:id="@+id/imageView61"
+                android:layout_gravity="center_vertical"
+                android:layout_alignParentStart="true"
+                android:layout_height="wrap_content"
+                android:paddingTop="9dp"
+                android:paddingBottom="9dp"
+                android:layout_width="110dp" />
+            <com.bayer.turfid.CustomTextView
+                android:id="@+id/diseasesTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/diseases"
+                android:layout_toRightOf="@id/imageView61"
+                android:textColor="@color/buttontextcolor"
+                android:textSize="@dimen/hmeBtnTxtSize"
+                android:textAlignment="textStart"
+                />
+            <ImageView
+                android:src="@drawable/blue_arrow"
+                android:id="@+id/imageView71"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical"
+                android:layout_width="@dimen/hmeArrowresol"
+                android:layout_height="@dimen/hmeArrowresol" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/diseasesTxtViewl"
+            android:id="@+id/InsectsTxtViewl"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hmeBtnHeight"
+            android:background="@drawable/table_center"
+            android:weightSum="1">
+
+            <ImageView
+                android:src="@drawable/insect"
+                android:id="@+id/imageView62"
+                android:visibility="visible"
+                android:layout_height="wrap_content"
+                android:layout_width="110dp"
+                android:layout_gravity="center_vertical"
+                android:layout_alignParentStart="true"
+                android:paddingTop="9dp"
+                android:paddingBottom="9dp"
+
+
+
+
+
+                />
+
+            <com.bayer.turfid.CustomTextView
+                android:id="@+id/InsectsTxtView"
+                android:text="@string/insects"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/imageView62"
+                android:textColor="@color/buttontextcolor"
+                android:textSize="@dimen/hmeBtnTxtSize"
+                android:textAlignment="textStart"
+                />
+
+            <ImageView
+                android:src="@drawable/blue_arrow"
+                android:id="@+id/imageView72"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical"
+                android:layout_width="@dimen/hmeArrowresol"
+                android:layout_height="@dimen/hmeArrowresol"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/InsectsTxtViewl"
+            android:id="@+id/productsTxtViewl"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hmeBtnHeight"
+            android:background="@drawable/table_center"
+            android:weightSum="1">
+
+            <ImageView
+                android:src="@drawable/product"
+                android:id="@+id/imageView63"
+                android:visibility="visible"
+                android:layout_height="wrap_content"
+                android:layout_width="110dp"
+                android:layout_gravity="center_vertical"
+                android:layout_alignParentStart="true"
+                android:paddingTop="9dp"
+                android:paddingBottom="9dp"
+
+
+                />
+            <com.bayer.turfid.CustomTextView
+                android:id="@+id/productsTxtView"
+                android:text="@string/products"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/imageView63"
+                android:textColor="@color/buttontextcolor"
+                android:textSize="@dimen/hmeBtnTxtSize"
+                android:textAlignment="textStart"
+
+                />
+            <ImageView
+                android:src="@drawable/blue_arrow"
+                android:id="@+id/imageView73"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical"
+                android:layout_width="@dimen/hmeArrowresol"
+                android:layout_height="@dimen/hmeArrowresol" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@+id/productsTxtViewl"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hmeBtnHeight"
+            android:background="@drawable/table_center"
+            android:id="@+id/weatherl"
+            android:weightSum="1">
+
+
+            <ImageView
+                android:src="@drawable/weather"
+                android:id="@+id/imageView64"
+                android:visibility="visible"
+                android:layout_height="74dp"
+                android:layout_gravity="center_vertical"
+                android:layout_alignParentStart="true"
+                android:paddingTop="9dp"
+                android:paddingBottom="9dp"
+
+
+                android:layout_width="110dp" />
+
+            <com.bayer.turfid.CustomTextView
+                android:text="Weather"
+                android:id="@+id/weather"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/imageView64"
+                android:textColor="@color/buttontextcolor"
+                android:textSize="@dimen/hmeBtnTxtSize"
+                android:textAlignment="textStart"
+
+                />
+
+            <ImageView
+                android:src="@drawable/blue_arrow"
+                android:id="@+id/imageView74"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical"
+                android:layout_width="@dimen/hmeArrowresol"
+                android:layout_height="@dimen/hmeArrowresol"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/weatherl"
+            android:id="@+id/calculatorl"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hmeBtnHeight"
+            android:background="@drawable/table_center"
+            android:weightSum="1">
+
+            <ImageView
+                android:src="@drawable/calculators"
+                android:id="@+id/imageView65"
+                android:visibility="visible"
+                android:layout_height="wrap_content"
+                android:layout_width="110dp"
+                android:layout_gravity="center_vertical"
+                android:layout_alignParentStart="true"
+                android:paddingTop="9dp"
+                android:paddingBottom="9dp"
+
+
+                />
+            <com.bayer.turfid.CustomTextView
+
+                android:text="@string/calc"
+                android:id="@+id/calculator"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/imageView65"
+                android:textColor="@color/buttontextcolor"
+                android:textSize="@dimen/hmeBtnTxtSize"
+                android:textAlignment="textStart"
+
+
+
+                />
+            <ImageView
+                android:src="@drawable/blue_arrow"
+                android:id="@+id/imageView75"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical"
+                android:layout_width="@dimen/hmeArrowresol"
+                android:layout_height="@dimen/hmeArrowresol"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/calculatorl"
+            android:id="@+id/sprayreportsl"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hmeBtnHeight"
+            android:background="@drawable/table_center"
+            android:weightSum="1">
+
+            <ImageView
+                android:src="@drawable/sprayreports"
+                android:id="@+id/imageView66"
+                android:visibility="visible"
+                android:layout_height="74dp"
+                android:layout_gravity="center_vertical"
+                android:layout_alignParentStart="true"
+                android:paddingTop="9dp"
+                android:paddingBottom="9dp"
+
+                android:layout_width="110dp" />
+
+
+
+
+
+
+
+            <com.bayer.turfid.CustomTextView
+                android:id="@+id/sprayreports"
+                android:layout_toRightOf="@+id/imageView66"
+                android:text="Spray Reports"
+
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/buttontextcolor"
+                android:textSize="@dimen/hmeBtnTxtSize"
+                android:textAlignment="textStart"
+
+
+
+
+
+
+                />
+
+            <ImageView
+                android:src="@drawable/blue_arrow"
+                android:id="@+id/imageView76"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical"
+                android:layout_width="@dimen/hmeArrowresol"
+                android:layout_height="@dimen/hmeArrowresol"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@+id/sprayreportsl"
+            android:id="@+id/map"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hmeBtnHeight"
+            android:background="@drawable/table_bottom"
+            android:weightSum="1">
+
+            <ImageView
+                android:src="@drawable/mapmyarea"
+                android:id="@+id/mapmyarea"
+                android:visibility="visible"
+                android:layout_height="74dp"
+                android:layout_gravity="center_vertical"
+                android:layout_alignParentStart="true"
+                android:paddingTop="9dp"
+                android:paddingBottom="9dp"
+                android:layout_width="110dp" />
+
+            <com.bayer.turfid.CustomTextView
+                android:id="@+id/maploc"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/mapmyarea"
+                android:textColor="@color/buttontextcolor"
+                android:textSize="@dimen/hmeBtnTxtSize"
+                android:textAlignment="textStart"
+
+                android:text="Map My Area"
+                />
+
+            <ImageView
+                android:src="@drawable/blue_arrow"
+                android:id="@+id/imageViewmap"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical"
+                android:layout_width="@dimen/hmeArrowresol"
+                android:layout_height="@dimen/hmeArrowresol" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

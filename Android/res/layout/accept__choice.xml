@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/accept__choice"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bayer.turfid.Accept_ChoiceActivity"
+    android:background="@drawable/home_bg">
+    <RelativeLayout
+        android:id="@+id/textviewLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/topTextView"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="true"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/bayer_logo"
+            android:id="@+id/logo_img"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            />
+
+        <com.bayer.turfid.CustomTextViewBold
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:text="Spray Calculation"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_height="60dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/linearLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/teviewcorners"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_centerInParent="true">
+        <com.bayer.turfid.CustomTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chooseBtn"
+            android:padding="10dp"
+            android:textColor="@color/black80"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:text="You can now add your Golf Clubs. Would you like to add one ?"
+            android:textSize="18dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"/>
+        <com.bayer.turfid.CustomButton
+            android:id="@+id/yesBtn"
+            android:background="@drawable/button_background"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#FEFEFE"
+            android:textSize="18dp"
+            android:layout_height="40dp"
+            android:padding="2dp"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/chooseBtn"
+            android:text="YES, Let's Do it"/>
+        <com.bayer.turfid.CustomButton
+            android:layout_width="match_parent"
+            android:padding="2dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="40dp"
+            android:textColor="#FEFEFE"
+            android:textSize="18dp"
+            android:id="@+id/noBtn"
+            android:text="NO, will do it later"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_background"
+            android:layout_below="@+id/yesBtn"
+            android:layout_marginBottom="20dp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+

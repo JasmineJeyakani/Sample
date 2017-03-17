@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/table_center">
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:background="@color/topTextView"
+		android:id="@+id/title"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"
+		android:layout_height="@dimen/titlelayoutHeight">
+
+		<ImageView
+			android:layout_width="@dimen/titleImageWidth"
+			android:layout_height="@dimen/titleImageHeight"
+			android:src="@drawable/bayer_logo"
+			android:id="@+id/img_logo"
+			android:layout_gravity="center"
+			android:layout_marginLeft="@dimen/titleImageMargin" />
+
+		<com.bayer.turfid.CustomTextViewBold
+			android:id="@+id/title1"
+			android:layout_width="fill_parent"
+			android:layout_height="match_parent"
+			android:text="@string/distributors"
+			android:textColor="#ffffff"
+			android:textSize="@dimen/titleTxtSize"
+			android:textStyle="bold"
+			android:gravity="center_vertical|center"
+			android:paddingRight="@dimen/titleTxtPadding" />
+	</LinearLayout>
+
+
+	<!--<TextView-->
+       <!--android:id="@+id/title"-->
+       <!--android:layout_width="fill_parent"-->
+       <!--android:layout_height="80dp"-->
+       <!--android:background="@drawable/top_blue"-->
+       <!--android:drawableRight="@drawable/bayer_logo"-->
+       <!--android:padding="5dp"-->
+       <!--android:text="@string/distributors"-->
+       <!--android:textColor="#ffffff"-->
+       <!--android:textSize="24dp"-->
+       <!--android:textStyle="bold"-->
+       <!--android:gravity="center"/>-->
+	<ListView
+		android:id="@id/android:list"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:divider="@android:color/white"
+		android:dividerHeight="5dp"
+		android:paddingLeft="3dp" />
+</LinearLayout>

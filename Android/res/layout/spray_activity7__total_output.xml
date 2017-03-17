@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_bg"
+    tools:context=".SprayActivity7_TotalOutput">
+
+    <LinearLayout
+        android:id="@+id/textviewLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/topTextView"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="true"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/bayer_logo"
+            android:id="@+id/logo_img"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp" />
+
+        <com.bayer.turfid.CustomTextViewBold
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+
+            android:text="Spray Calculation"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingRight="60dp"
+            android:layout_height="60dp" />
+    </LinearLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/layoutproductabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/teviewcorners"
+        android:elevation="0dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="120dp"
+        android:layout_below="@+id/textviewLayout"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/imageView3"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/contentTextPadding"
+            android:src="@drawable/spray" />
+
+        <com.bayer.turfid.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView3"
+            android:lineSpacingExtra="1dp"
+            android:id="@+id/productlabel"
+            android:textColor="#333333"
+            android:textAlignment="center"
+            android:text="@string/actualoutput"
+            android:paddingTop="@dimen/contentTextPadding"
+            android:paddingBottom="13dp"
+            android:textSize="17sp"
+            android:paddingLeft="15dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/continueButtonLayoutHeight"
+            android:layout_below="@+id/productlabel"
+            android:background="@drawable/box"
+            android:gravity="center">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="15dp"
+                android:gravity="center">
+
+                <com.bayer.turfid.CustomEditTextBold
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Litres/Minute"
+                    android:layout_gravity="left"
+                    android:background="#EBEBEB"
+                    android:textSize="13sp"
+                    android:id="@+id/actualOutput"
+                    android:textColor="@color/black80"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <com.bayer.turfid.CustomButton
+                    android:layout_width="120dp"
+                    android:text="Continue >"
+                    android:background="@drawable/button_background"
+                    android:textSize="@dimen/txt"
+                    android:textColor="#FEFEFE"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:id="@+id/continue7actulabtn"
+                    android:layout_height="30dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/background_floating_material_dark"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/leftarrowknapsack"
+                android:src="@drawable/back_calc"
+                android:layout_gravity="center" />
+
+            <com.bayer.turfid.CustomTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/step7"
+                android:id="@+id/step2"
+                android:textSize="15dp"
+                android:textAlignment="textEnd"
+                android:gravity="center"
+                android:textColor="#707070"
+                android:layout_weight="0.5" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

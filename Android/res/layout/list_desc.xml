@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/description_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/table_center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@color/topTextView"
+        android:id="@+id/title"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="@dimen/titlelayoutHeight">
+
+        <ImageView
+            android:layout_width="@dimen/titleImageWidth"
+            android:layout_height="@dimen/titleImageHeight"
+            android:src="@drawable/bayer_logo"
+            android:id="@+id/img_logo"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/titleImageMargin" />
+
+        <com.bayer.turfid.CustomTextViewBold
+            android:id="@+id/title1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/titleTxtSize"
+            android:textStyle="bold"
+            android:gravity="center_vertical|center"
+            android:paddingRight="@dimen/titleTxtPadding" />
+    </LinearLayout>
+
+    <!--<TextView-->
+        <!--android:id="@+id/title"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="80dp"-->
+        <!--android:background="@drawable/top_blue"-->
+        <!--android:drawableRight="@drawable/bayer_logo"-->
+        <!--android:gravity="center"-->
+        <!--android:padding="5dp"-->
+        <!--android:textColor="#ffffff"-->
+        <!--android:textSize="24dp"-->
+        <!--android:textStyle="bold" />-->
+
+    <ScrollView
+        android:id="@+id/verticalScrollView"
+        android:layout_width="fill_parent"
+
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.bayer.turfid.ScrollView
+
+                android:id="@+id/scrollView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/rootlayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/widgetRelative"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@android:color/transparent"
+                            android:paddingRight="25dp"
+
+                            android:scaleType="center" />
+
+                        <ImageView
+                            android:id="@+id/firstArrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@android:color/transparent"
+
+                            android:scaleType="center" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@android:color/transparent"
+                            android:paddingLeft="25dp"
+                            android:scaleType="center" />
+
+                        <ImageView
+                            android:id="@+id/secondArrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@android:color/transparent"
+
+                            android:scaleType="center" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </com.bayer.turfid.ScrollView>
+
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:layout_below="@id/scrollView"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/family"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:layout_below="@id/name"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                android:textStyle="italic" />
+
+            <TableLayout
+                android:id="@+id/treatmentlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/family"
+
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <FrameLayout>
+
+                        <ImageButton
+                            android:id="@+id/treatment"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:scaleType="centerInside" />
+
+                        <TextView
+                            android:id="@+id/treatmentText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:clickable="false"
+                            android:paddingBottom="10dp"
+                            android:textColor="@android:color/white"></TextView>
+                    </FrameLayout>
+
+                    <FrameLayout>
+
+                        <ImageButton
+                            android:id="@+id/cultural"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:scaleType="centerInside" />
+
+                        <TextView
+                            android:id="@+id/culturalText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center"
+                            android:clickable="false"
+                            android:paddingBottom="10dp"
+                            android:textColor="@android:color/white"></TextView>
+                    </FrameLayout>
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/treatmentlayout"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:autoLink="web|email|phone"
+                android:textColor="@android:color/black" />
+
+
+            <!--  <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+            <ImageButton
+                android:id="@+id/prod1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:layout_marginRight="100dp"/>
+            <ImageButton
+                android:id="@+id/prod2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:scaleType="centerInside" />
+
+            </RelativeLayout>-->
+            <!--<TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/description"
+                    android:id="@+id/tbllayout"
+
+                android:layout_gravity="center_horizontal" android:layout_centerInParent="true">
+                <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageButton
+                android:id="@+id/prod1"
+                android:layout_alignParentBottom="true"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"/>
+                <ImageButton
+                android:id="@+id/prod2"
+                android:layout_alignParentBottom="true"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"/>
+                </TableRow>
+
+            </TableLayout>
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tbllayout"
+                android:layout_gravity="center_horizontal" android:layout_centerInParent="true">
+                <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageButton
+                android:id="@+id/prod3"
+                android:layout_width="150dp"
+                android:layout_alignParentBottom="true"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"/>
+                <ImageButton
+                android:id="@+id/prod4"
+                android:layout_width="150dp"
+                android:layout_alignParentBottom="true"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"/>
+
+                </TableRow>
+            </TableLayout>-->
+
+            <!-- <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/prod3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"/>
+            <ImageButton
+                android:id="@+id/prod4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/prod3"/>
+
+            </RelativeLayout>-->
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
+
+            

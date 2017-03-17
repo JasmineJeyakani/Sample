@@ -1,0 +1,94 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+<!--TitleLayout-->
+    <dimen name="titlelayoutHeight">60dp</dimen>
+    <dimen name="titleImageWidth">40dp</dimen>
+    <dimen name="titleImageHeight">40dp</dimen>
+    <dimen name="titleImageMargin">20dp</dimen>
+    <dimen name="titleTxtPadding">60dp</dimen>
+    <dimen name="titleTxtSize">20dp</dimen>
+    <!--HomeLayout-->
+    <dimen name="hmemarginTop">45dp</dimen>
+    <dimen name="hmeLayoutmargin">20dp</dimen>
+    <dimen name="hmeBtnHeight">50dp</dimen>
+    <dimen name="hmeBtnImageresol">22dp</dimen>
+    <dimen name="hmeBtnTxtSize">21dp</dimen>
+    <dimen name="hmeArrowresol">20dp</dimen>
+
+
+
+    <!--WeatherLayout-->
+    <dimen name="weatherLayoutPadding">10dp</dimen>
+    <dimen name="weatherdateTxtSize">14dp</dimen>
+    <dimen name="weatherHumHeight">70dp</dimen>
+    <dimen name="weatherHumPadding">10dp</dimen>
+    <dimen name="weatherHumMarginTop">35dp</dimen>
+    <dimen name="weatherHumTxtSize">18dp</dimen>
+    <dimen name="weatherCounMarginBottom">20dp</dimen>
+    <dimen name="weatherCounSize">20dp</dimen>
+    <dimen name="weatherLayoutHeight">90dp</dimen>
+    <dimen name="weathercelTxtmarginBottom">-15dp</dimen>
+    <dimen name="weathercelTxtRight">8dp</dimen>
+    <dimen name="weathercelTxtMarginLeft">100dp</dimen>
+    <dimen name="weathercelTxtSize">100dp</dimen>
+    <dimen name="weatherdegsymMarginTop">-10dp</dimen>
+    <dimen name="weatherdegTxtSize">40dp</dimen>
+    <dimen name="weatherImgHeight">30dp</dimen>
+    <dimen name="weathweImgeMarginBottom">5dp</dimen>
+    <dimen name="wealistcounmarginTop">10dp</dimen>
+    <dimen name="wealistcounmarginBottom">15dp</dimen>
+    <dimen name="weaPaddingLeft">50dp</dimen>
+    <dimen name="wealistcountxtsize">18dp</dimen>
+    <dimen name="weahorilistHeight">50dp</dimen>
+    <dimen name="weahorilistMarginLeft">20dp</dimen>
+    <dimen name="weamarginBottom">15dp</dimen>
+    <dimen name="weamorlayoutHeight">53dp</dimen>
+    <dimen name="weamorMarginRight">10dp</dimen>
+    <dimen name="weamorlayoutpadding">5dp</dimen>
+    <dimen name="morValTxtSize">12dp</dimen>
+    <dimen name="verlineWidth">1dp</dimen>
+    <dimen name="verlineMargin">5dp</dimen>
+    <dimen name="closeBtnResol">13dp</dimen>
+    <dimen name="closeBtnPadding">80dp</dimen>
+    <dimen name="closeBtnMarginTop">13dp</dimen>
+    <dimen name="weatherLineMarginBottom">15dp</dimen>
+    <dimen name="weatherBlueHoriLayoutHeight">53dp</dimen>
+    <dimen name="blueLayoutMarginRight">10dp</dimen>
+    <dimen name="blueLayoutPadding">5dp</dimen>
+    <dimen name="blueTextSize">12dp</dimen>
+
+
+
+    <dimen name="txt">15dp</dimen>
+    <dimen name="settingslayoutheight">350dp</dimen>
+    <dimen name="settinsbtnheight">40dp</dimen>
+    <dimen name="setingsavebtnwidth">150dp</dimen>
+    <dimen name="setingsavebtnheight">30dp</dimen>
+    <dimen name="settingstxtmargintop">40dp</dimen>
+    <dimen name="settingstxtmarginbottom">30dp</dimen>
+    <dimen name="headtextViewLayoutHeight">100dp</dimen>
+    <dimen name="headtextSize">25dp</dimen>
+    <dimen name="headtextViewPadding">60dp</dimen>
+    <dimen name="contentNoteLayoutMargin">40dp</dimen>
+    <dimen name="contentLayoutMarginTop">130dp</dimen>
+    <dimen name="contentNoteLayoutPadding">30dp</dimen>
+    <dimen name="contentImageWidth">80dp</dimen>
+    <dimen name="contentImageHeight">80dp</dimen>
+    <dimen name="contentTextSize">23dp</dimen>
+    <dimen name="contentTextPadding">20dp</dimen>
+    <dimen name="contentTextPaddingeft">50dp</dimen>
+    <dimen name="continueButtonLayoutHeight">50dp</dimen>
+    <dimen name="editTextLayputPadding">20dp</dimen>
+    <dimen name="editTextPaddingLeft">20dp</dimen>
+    <dimen name="continueButtonLayoutPadding">15dp</dimen>
+    <dimen name="noteLayoutTopMargin">-10dp</dimen>
+    <dimen name="noteTextSize">24dp</dimen>
+    <dimen name="noteViewPadding">10dp</dimen>
+    <dimen name="bottomLayoutHeight">100dp</dimen>
+    <dimen name="bottomLayoutPadding">20dp</dimen>
+    <dimen name="bottomLayoutTextSize">25dp</dimen>
+    <dimen name="tendp">10dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+</resources>

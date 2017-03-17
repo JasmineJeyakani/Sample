@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:background="@color/topTextView"
+		android:id="@+id/title"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"
+		android:layout_height="@dimen/titlelayoutHeight">
+
+		<ImageView
+			android:layout_width="@dimen/titleImageWidth"
+			android:layout_height="@dimen/titleImageHeight"
+			android:src="@drawable/bayer_logo"
+			android:id="@+id/img_logo"
+			android:layout_gravity="center"
+			android:layout_marginLeft="@dimen/titleImageMargin" />
+
+		<com.bayer.turfid.CustomTextViewBold
+			android:id="@+id/title1"
+			android:layout_width="fill_parent"
+			android:layout_height="match_parent"
+			android:text="@string/distributors"
+			android:textColor="#ffffff"
+			android:textSize="@dimen/titleTxtSize"
+			android:textStyle="bold"
+			android:gravity="center_vertical|center"
+			android:paddingRight="@dimen/titleTxtPadding" />
+	</LinearLayout>
+
+
+
+	<!--<TextView-->
+       <!--android:id="@+id/title"-->
+       <!--android:layout_width="fill_parent"-->
+       <!--android:layout_height="80dp"-->
+       <!--android:background="@drawable/top_blue"-->
+       <!--android:drawableRight="@drawable/bayer_logo"-->
+       <!--android:padding="5dp"-->
+       <!--android:text="@string/distributors"-->
+       <!--android:textColor="#ffffff"-->
+       <!--android:textSize="24dp"-->
+       <!--android:textStyle="bold"-->
+       <!--android:gravity="center"/>-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:background="#EBEBEB"
+
+	>
+
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_below="@+id/child_layout"
+		android:layout_centerHorizontal="true">
+	<!--<ImageButton -->
+		 <!--android:id="@+id/submit" -->
+		 <!--android:layout_width="wrap_content" -->
+		 <!--android:layout_height="wrap_content"-->
+	     <!--android:src="@drawable/submit"	     -->
+	     <!--android:layout_centerHorizontal="true"-->
+	     <!--android:layout_centerVertical="true"-->
+	     <!--android:background="@android:color/transparent"/>-->
+		<com.bayer.turfid.CustomButton
+            android:id="@+id/submit"
+            android:layout_height="wrap_content"
+			android:padding="7dp"
+            android:background="@drawable/button_background"
+            android:textSize="24dp"
+            android:textColor="#FEFEFE"
+            android:text="Submit"
+            android:layout_width="120dp"
+			android:layout_alignParentTop="true"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="58dp" />
+	</RelativeLayout>
+
+	<RelativeLayout
+	    android:id="@+id/child_layout"
+		android:layout_width="fill_parent"
+		android:layout_height="200dp"
+
+		android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"
+		android:layout_marginTop="100dp">
+		<kankan.wheel.widget.WheelView android:id="@+id/item"
+		        android:layout_height="200dp"
+		        android:layout_width="fill_parent"
+		        android:layout_centerVertical="true"
+		        android:layout_centerHorizontal="true"
+		        android:layout_marginTop="10dp"
+		        android:layout_marginBottom="10dp"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"/>
+	</RelativeLayout>
+</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/manual_mapping_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bayer.turfid.GpsMappingActivity">
+    <LinearLayout
+        android:id="@+id/textviewLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/topTextView"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="true"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/bayer_logo"
+            android:id="@+id/img_logo"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp" />
+
+        <com.bayer.turfid.CustomTextViewBold
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+
+            android:text="Walk My Area"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingRight="40dp"
+            android:layout_height="60dp" />
+    </LinearLayout>
+
+
+    <FrameLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textviewLayout"
+        android:layout_above="@+id/areaLayout">
+
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/thumbnailimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:padding="3dip"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom|center">
+
+            <ImageView
+                android:id="@+id/list_image"
+                android:layout_width="60dip"
+                android:layout_height="60dip"
+                android:src="@drawable/mymarker" />
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/thumbnailimg1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#4C4D4C"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:id="@+id/save1">
+            <ImageView
+                android:id="@+id/save"
+                android:src="@drawable/save_btn"
+                android:layout_centerHorizontal="false"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+            <com.bayer.turfid.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/save"
+                android:layout_centerHorizontal="false"
+                android:layout_centerVertical="true"
+                android:text="SAVE"
+                android:paddingLeft="10dp"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/close"
+                android:src="@drawable/close"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+
+        </RelativeLayout>
+
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/areaLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@color/layoutBackGround"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true">
+
+        <com.bayer.turfid.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Area Total"
+            android:id="@+id/textView27"
+            android:layout_gravity="center"
+            android:textSize="15dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:longClickable="false"
+            android:textColor="#585151"
+            android:layout_marginTop="10dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.bayer.turfid.CustomTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/areaVal"
+                android:layout_weight="1"
+                android:text="0"
+                android:textAlignment="textEnd"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="21dp"
+                android:textColor="#353131" />
+
+            <com.bayer.turfid.CustomTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="21dp"
+                android:textColor="#353131"
+                android:text="@string/square"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

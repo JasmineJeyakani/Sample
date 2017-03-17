@@ -1,0 +1,180 @@
+<resources>
+
+    <string name="accept">All information published by Bayer CropScience is provided in good faith and is NOT a substitute for rigorous field walking in combination with advice from BASIS qualified persons.  Any decisions made based on the information are the responsibility of the user.  Bayer CropScience Limited and members of their respective groups accept no liability for any loss or damage resulting from the use of this turf weed, pest and disease app.</string>
+    <string name="popupString">Name of the product</string>
+    <string name="degree">&#176;</string>
+    <string name="square">&#13217;</string>
+    <string name="hello">Hello World, BayerTurfManagementActivity!</string>
+    <string name="app_name">TurfXpert</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="identify">Identify</string>
+    <string name="contact">Contact Us</string>
+    <string name="distributors">Distributors</string>
+    <string name="about">About Us</string>
+    <string name="Title">Turf Id</string>
+    <string name="weeds">Weeds</string>
+    <string name="diseases">Diseases</string>
+    <string name="insects">Insects</string>
+    <string name="products">Products</string>
+    <string name="count">&lt; 1 of 3 &gt;</string>
+    <string name="terms">Terms &amp; Conditions</string>
+    <string name="calc">Spray Calculator</string>
+    <string name="reports">Spray Reports</string>
+
+    <string name="identifyTxt">Unfortunately, Bayer cannot complete ID requests from users\n
+        outside of UK and Ireland. We will endevour to identify\n
+        weeds, diseases and insects in the UK and Ireland only.</string>
+    <string name="identifyCam">You can take upto 3 different photos to\n support indentification.</string>
+    <string name="knapsack">&#x20;Wearing the Knapsack and full\n protective clothing, measure the time\n in seconds it takes to <b>walk 10m and\n enter the value here.</b></string>
+    <string name="productlabel">
+        From the product label, determine the\n
+        target volume of <b>water in litres per\n
+        hectare and enter the value here....</b></string>
+    <string name="productlabelnote">
+
+         <i>Note: Volumes of water may be flexible on the product\n
+         label. Use higher water volumes for denser canopy\n
+         growth. If in doubt use the higher volume quoted.</i>
+    </string>
+<string name="alert2Ident"><i>Please ensure the images you send area as\n
+clear as possible to aid identification.</i></string>
+
+
+    <string name="step2"><font fgcolor="stepcolor"><b>Step:&#x20;&#160;2&#x20;</b></font>/11</string>
+    <string name="step3"><font fgcolor="stepcolor"><b>Step:&#x20;&#160;3&#x20;</b></font>/11</string>
+    <string name="step4"><font fgcolor="stepcolor"><b>Step:&#x20;&#160;4&#x20;</b></font>/11</string>
+    <string name="step5"><font fgcolor="stepcolor"><b>Step:&#x20;&#160;5&#x20;</b></font>/11</string>
+    <string name="step6"><font fgcolor="stepcolor"><b>Step:&#x20;&#160;6&#x20;</b></font>/11</string>
+    <string name="step7"><font fgcolor="stepcolor"><b>Step:&#x20;&#160;7&#x20;</b></font>/11</string>
+    <string name="step8"><font fgcolor="stepcolor"><b>Step:&#x20;&#160;8&#x20;</b></font>/11</string>
+    <string name="step9"><font fgcolor="stepcolor"><b>Step:&#x20;&#160;9&#x20;</b></font>/11</string>
+    <string name="step10"><font fgcolor="stepcolor"><b>Step:&#x20;&#160;10&#x20;</b></font>/11</string>
+    <string name="step11"><font fgcolor="stepcolor"><b>Step:&#x20;&#160;11&#x20;</b></font>/11</string>
+<string name="holdingSpray">&#x20;On a dry area, holding the spray\n
+nozzle at a  normal working distance\n
+from the floor, spray a band of water.\n
+<b>Measure the width of the spray\n
+swath and enter the measurements\n
+in metres.</b></string>
+    <string name="mand"><b><i>* mandatory fields</i></b></string>
+    <string name="holdingspraynote">
+        <i>Note: Spraying height should be 0.35 metres\n
+        above area to be sprayed for a 110 degree\n
+        nozzle or 0.6 metres above area to be sprayed\n
+        for an 80 degree nozzle</i>
+    </string>
+    <string name="correctnozzle">
+        <b>Select the correct type of nozzle\n
+            and pressure</b>, as near to the target\n
+        nozzle output is required as possible,\n
+        using the operator handbook. Please\n
+        enter the nozzle pressure in BAR.
+
+    </string>
+    <string name="correctnozzlenote">
+      <i>  Note: 1 BAR=15 PSI</i>
+    </string>
+    <string name="calibratedJug">
+        Using a calibrated jug and stopwatch,\n
+        check the output of your sprayer over a\n
+        period of one minute. If more than one\n
+        nozzle is fitted, check all of them are of\n
+        same type and add together the\n
+        individual nozzle outputs to give\n
+        the total figure.\n\n
+        <b>Keep a note of the actual\n
+            nozzle output</b>
+    </string>
+
+
+    <string name="calibratedJugboom">
+        Using a calibrated jug and stopwatch,
+        check the output from a minimum of four
+        nozzles and at least one from each boom section.\n
+        \n
+        If time permits, check the output from all nozzles.
+        \n\n
+        <b>Keep a note of the actual\n
+            nozzle output</b>
+    </string>
+
+    <string name="calibratedJugNote">
+       <i> Note: Should the output of nozzles differ by + or -5% and\n
+        cannot be connected by adjusting the pressure, then\n
+        re-check the measurements and calculations. If necessary,\n
+        the next largest nozzle size should be substituted.</i>
+    </string>
+    <string name="actualoutput">
+        <b>Enter the actual nozzle output</b>\n
+        of the sprayer in litres per minute.
+    </string>
+    <string name="result2txt">
+        <!--If your actual water volume is within the\n-->
+        <!--limits set by the product label, your\n-->
+        <!--knapsack is correctly calibrated.\n-->
+        <!--Skip step 8 and go directly to step 9.-->
+        If your actual volume of water is within the limits set
+by the product label, your knapsack is
+correctly calibrated.
+    </string>
+    <string name="result3txt">
+        <!--To achieve the correct water volume you\n-->
+        <!--must alter either your swath width or walking\n-->
+        <!--speed.<b> The adjusted figures are shown\n\tbelow.</b>\n-->
+        <!--If the adjusted figures are still outside the\n-->
+        <!--boundaries for safe spraying, you must alter\n-->
+        <!--the pressure or change the nozzle(s).-->
+        &#x20;To achieve the correct water volume you must
+alter either your swath width or walking speed.
+The adjusted figures are shown below.
+
+    </string>
+    <string name="result31txt">
+       &#x20; Please note it is not possible to achieve the
+recommended water volume please review the
+outputs from your sprayer and either alter your
+nozzle type or pressure to achieve the label
+defined output. Please re-enter your data.
+    </string>
+    <string name="sprayertanktxt">
+        <b>Enter the tank capacity
+        in litres.</b>
+    </string>
+    <string name="productlabeltxt11">
+        From the product label, determine\n
+        the <b>product dose rate in litres\n
+        per hectare and enter the value.</b>
+    </string>
+    <string name="calculateArea">
+        Calculate the  area to be treated in
+    </string>
+    <string name="calculatearea">
+        <b>Calculate the area </b>to be treated\n
+        in square metres.
+    </string>
+    <string name="calculateareaboom">
+        <b>Enter the area </b>to be treated\n
+        in square metres.
+    </string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_boom_step2">BoomStep2Activity</string>
+    <string name="boomstep2">"As carefully as possible, measure the time it takes the sprayer to <b>travel 100m in seconds and enter the value here.</b>"</string>
+    <string name="title_activity_boom_step7">BoomStep7Activity</string>
+    <string name="title_activity_boom_step8">BoomStep8Activity</string>
+    <string name="boomstep7"><center><b>Enter the output of one nozzle</b><br /> in litres per minute here.</center></string>
+    <string name="boomstep8"><center>Enter the <b>number of nozzles</b><br /> on the spraying machine here.</center></string>
+    <string name="boomstep9"><center>Enter the <b>width of the spray boom</b><br /> in metres here.</center></string>
+    <string name="boom_step_2"><font fgcolor="stepcolor"><b>Step:&#x20;&#160;2&#x20;</b></font>/13</string>
+    <string name="boom_step_3"><font fgcolor="stepcolor"><b>Step:&#x20;&#160;3&#x20;</b></font>/13</string>
+    <string name="boom_step_4"><font fgcolor="stepcolor"><b>Step:&#x20;&#160;4&#x20;</b></font>/13</string>
+    <string name="boom_step_5"><font fgcolor="stepcolor"><b>Step:&#x20;&#160;5&#x20;</b></font>/13</string>
+    <string name="boom_step_6"><font fgcolor="stepcolor"><b>Step:&#x20;&#160;6&#x20;</b></font>/13</string>
+    <string name="boom_step_7"><font fgcolor="stepcolor"><b>Step:&#x20;&#160;7&#x20;</b></font>/13</string>
+    <string name="boom_step_8"><font fgcolor="stepcolor"><b>Step:&#x20;&#160;8&#x20;</b></font>/13</string>
+    <string name="boom_step_9"><font fgcolor="stepcolor"><b>Step:&#x20;&#160;9&#x20;</b></font>/13</string>
+    <string name="boom_step_10"><font fgcolor="stepcolor"><b>Step:&#x20;&#160;10&#x20;</b></font>/13</string>
+    <string name="boom_step_11"><font fgcolor="stepcolor"><b>Step:&#x20;&#160;11&#x20;</b></font>/13</string>
+    <string name="boom_step_12"><font fgcolor="stepcolor"><b>Step:&#x20;&#160;12&#x20;</b></font>/13</string>
+    <string name="boom_step_13"><font fgcolor="stepcolor"><b>Step:&#x20;&#160;13&#x20;</b></font>/13</string>
+</resources>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mapping_"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_map"
+    tools:context="com.bayer.turfid.Mapping_Activity">
+
+    <LinearLayout
+        android:id="@+id/textviewLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/topTextView"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="true"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/bayer_logo"
+            android:id="@+id/img_logo"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp" />
+
+        <com.bayer.turfid.CustomTextViewBold
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+
+            android:text="Map My Area"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingRight="40dp"
+            android:layout_height="60dp" />
+    </LinearLayout>
+
+    <com.bayer.turfid.CustomTextView
+        android:layout_below="@+id/textviewLayout"
+        android:id="@+id/clubname"
+        android:layout_width="wrap_content"
+
+        android:inputType="textPersonName"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Choose Golf Club"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/box"
+        android:padding="8dp"
+        android:layout_height="43dp"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:textColor="#333333"
+        android:textAlignment="viewStart"
+
+
+
+
+
+
+        />
+    <com.bayer.turfid.CustomEditText
+        android:layout_below="@+id/clubname"
+        android:id="@+id/clubarea"
+        android:hint="Area Name"
+        android:layout_width="wrap_content"
+        android:imeOptions="actionDone"
+        android:inputType="textPersonName"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/box"
+        android:padding="8dp"
+        android:layout_height="43dp"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:textColor="#333333"
+        android:textAlignment="viewStart"
+
+       />
+
+    <RelativeLayout
+        android:id="@+id/rela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:paddingLeft="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/teviewcorners"
+        android:layout_centerInParent="true"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+
+        >
+
+
+
+
+        <com.bayer.turfid.CustomTextView
+            android:text="Select Measurement Type"
+            android:textSize="15dp"
+            android:padding="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/meastxt"
+            />
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/meastxt"
+            android:padding="10dp"
+            android:id="@+id/walklay"
+            >
+
+        <com.bayer.turfid.CustomTextViewBold
+
+            android:textSize="17dp"
+            android:text="Walk My Area"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/walkTxt"
+            android:textColor="@color/black80"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/guy_sym"
+            android:id="@+id/imageView10"
+             />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/walklay"
+            android:padding="10dp">
+        <com.bayer.turfid.CustomTextViewBold
+            android:layout_below="@+id/walkTxt"
+            android:textSize="17dp"
+            android:text="Mark My Area"
+            android:textColor="@color/black80"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/markTxt" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/location_sym"
+            android:id="@+id/imageView11"
+             />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <com.bayer.turfid.CustomTextView
+        android:layout_height="wrap_content"
+        android:id="@+id/day2"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/humidityTextColor"
+        android:layout_width="70dp"
+        android:textAlignment="center"/>
+
+    <com.bayer.turfid.CustomTextView
+        android:layout_height="wrap_content"
+        android:id="@+id/date2"
+        android:textColor="@color/humidityTextColor"
+        android:layout_width="70dp"
+        android:textAlignment="center"/>
+</LinearLayout>

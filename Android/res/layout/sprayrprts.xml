@@ -1,0 +1,45 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.bayer.turfid.SprayActivity_Result5"
+android:orientation="vertical"
+android:background="@drawable/home_bg">
+<LinearLayout
+    android:id="@+id/textviewLayout"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/topTextView"
+    android:layout_alignParentStart="false"
+    android:layout_alignParentTop="true"
+    >
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/bayer_logo"
+        android:id="@+id/img_logo"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp" />
+
+    <com.bayer.turfid.CustomTextViewBold
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+
+        android:text="Spray Reports"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingRight="60dp"
+        android:layout_height="60dp" />
+</LinearLayout>
+    <ListView
+        android:layout_below="@id/textviewLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:id="@+id/spraylist"
+        android:layout_margin="10dp" />
+</RelativeLayout>

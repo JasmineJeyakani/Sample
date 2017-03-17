@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_bg"
+
+    tools:context="com.bayer.turfid.WeatherMainActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/prograssLayout"
+        android:gravity="center"
+        android:visibility="visible"
+        android:background="@color/layoutBackGround"
+        android:layout_below="@+id/title">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lin">
+        <ProgressBar
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_centerInParent="true"
+            android:id="@+id/progressbar_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            tools:visibility="visible" />
+
+        <com.bayer.turfid.CustomTextView
+            android:text="Loading.."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="5dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout2"
+        android:focusableInTouchMode="true"
+        android:descendantFocusability="beforeDescendants"
+        android:layout_below="@+id/title">
+
+
+        <RelativeLayout
+            android:focusableInTouchMode="true"
+            android:id="@+id/relativeLayout"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/layoutBackGround"
+            android:paddingTop="@dimen/weatherLayoutPadding"
+            >
+
+
+            <com.bayer.turfid.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Date"
+                android:id="@+id/datetxtview"
+                android:gravity="center"
+                android:textSize="@dimen/weatherdateTxtSize"
+                android:textStyle="bold|italic"
+                android:textColor="@color/dateTextColor" />
+
+            <LinearLayout
+                android:id="@+id/weatherlayout2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/weatherHumHeight"
+                android:layout_below="@+id/weatherlayout"
+                android:layout_alignWithParentIfMissing="false"
+                android:layout_alignParentRight="false"
+                android:layout_marginTop="@dimen/weatherHumMarginTop"
+                android:paddingLeft="@dimen/weatherHumPadding"
+                android:paddingRight="@dimen/weatherHumPadding">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="0.3">
+
+                    <com.bayer.turfid.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Humidity"
+                        android:id="@+id/humiditytxt"
+                        android:textColor="@color/humidityTextColor"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/weatherHumTxtSize" />
+
+                    <com.bayer.turfid.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:id="@+id/humiditytxt1"
+                        android:textSize="@dimen/weatherHumTxtSize"
+                        android:textColor="@color/humidityTextColor" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="0.4">
+
+                    <com.bayer.turfid.CustomTextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Wind"
+                        android:id="@+id/windtxt"
+                        android:textColor="@color/humidityTextColor"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/weatherHumTxtSize" />
+
+                    <com.bayer.turfid.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:id="@+id/windtxt1"
+
+
+                        android:gravity="center"
+                        android:textSize="@dimen/weatherHumTxtSize"
+                        android:textColor="@color/humidityTextColor" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="0.3">
+
+                    <com.bayer.turfid.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Feels Like"
+                        android:id="@+id/feelsliketxt"
+                        android:textColor="@color/humidityTextColor"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/weatherHumTxtSize" />
+
+                    <com.bayer.turfid.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:id="@+id/feelsliketxt1"
+                        android:gravity="center"
+                        android:textSize="@dimen/weatherHumTxtSize"
+                        android:textColor="@color/humidityTextColor" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.bayer.turfid.CustomTextView
+                android:layout_below="@+id/datetxtview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Country"
+                android:id="@+id/countrytxt"
+                android:layout_marginBottom="@dimen/weatherCounMarginBottom"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/countryTextColor"
+                android:textSize="@dimen/weatherCounSize" />
+            <android.support.v4.view.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/weatherLayoutHeight"
+                android:layout_below="@+id/countrytxt"
+                android:id="@+id/weatherlayout">
+                <RelativeLayout
+
+                    android:id="@+id/ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/weatherLayoutHeight"
+
+                    >
+
+                    <com.bayer.turfid.CustomTextViewThin
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/celciustxt"
+                        android:textSize="@dimen/weathercelTxtSize"
+                        android:text="15"
+                        android:textColor="@color/degreeTextColor"
+                        android:layout_centerInParent="true"
+                        />
+
+                    <com.bayer.turfid.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView5"
+                        android:layout_weight="1"
+                        android:text="@string/degree"
+                        android:layout_toRightOf="@+id/celciustxt"
+                        android:textColor="@color/degreeTextColor"
+                        android:textSize="@dimen/weatherdegTxtSize" />
+
+                    <ImageView
+                        android:layout_width="@dimen/weatherImgHeight"
+                        android:layout_height="@dimen/weatherImgHeight"
+                        android:id="@+id/imageView22"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toRightOf="@+id/celciustxt"
+                        android:src="@drawable/sun_cloud"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        />
+
+                </RelativeLayout>
+            </android.support.v4.view.ViewPager>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/weatherlayout2"
+                >
+                <com.bayer.turfid.NonScrollListView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/nonlistView"
+                    android:listSelector="@android:color/transparent"
+                    android:nestedScrollingEnabled="false"
+                    android:background="#4D4D4D"
+
+                    android:divider="@drawable/divider_listview"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlelayoutHeight"
+        android:background="@color/topTextView"
+        android:id="@+id/title"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="@dimen/titleImageHeight"
+            android:layout_height="@dimen/titleImageWidth"
+            android:src="@drawable/bayer_logo"
+            android:id="@+id/img_logo"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/titleImageMargin" />
+
+        <com.bayer.turfid.CustomTextViewBold
+
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="Weather"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/titleTxtSize"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingRight="@dimen/titleTxtPadding" />
+    </LinearLayout>
+</RelativeLayout>
+

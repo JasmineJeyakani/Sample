@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.bayer.turfid.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Large Text"
+        android:id="@+id/daylist"
+        android:textSize="14dp"
+        android:textColor="#ffffff"
+        android:layout_gravity="left"
+        android:layout_weight="1"
+        android:textAlignment="textStart"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp" />
+
+    <com.bayer.turfid.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medium Text"
+        android:id="@+id/templist"
+
+        android:layout_weight="1"
+        android:textAlignment="viewEnd"
+        android:textColor="#ffffff"
+        android:textSize="14dp"
+        android:layout_gravity="right"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingRight="10dp" />
+</LinearLayout>

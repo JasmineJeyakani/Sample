@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_bg">
+    <RelativeLayout
+        android:id="@+id/textviewLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/topTextView"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="true"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/bayer_logo"
+            android:id="@+id/logo_img"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            />
+
+        <com.bayer.turfid.CustomTextViewBold
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:text="Spray Calculator"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_height="60dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/linearLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/layoutcolor"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_centerInParent="true">
+        <com.bayer.turfid.CustomTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chooseBtn"
+            android:padding="10dp"
+            android:textColor="@color/black80"
+            android:layout_centerHorizontal="true"
+            android:text="Choose your sprayer type"
+            android:textSize="18dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="40dp"/>
+        <com.bayer.turfid.CustomButton
+            android:id="@+id/knapSack"
+            android:background="@drawable/button_background"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#FEFEFE"
+            android:textSize="18dp"
+            android:layout_height="40dp"
+            android:padding="2dp"
+            android:layout_marginBottom="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/chooseBtn"
+            android:text="Knapsack Sprayer"/>
+        <com.bayer.turfid.CustomButton
+            android:layout_width="match_parent"
+            android:padding="2dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="40dp"
+            android:textColor="#FEFEFE"
+            android:textSize="18dp"
+            android:id="@+id/boom"
+            android:text="Vehicle Mounted Sprayer"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_background"
+            android:layout_below="@+id/knapSack"
+            android:layout_marginBottom="40dp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

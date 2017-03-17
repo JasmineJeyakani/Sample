@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    	<TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/top_blue"
+        android:drawableRight="@drawable/bayer_logo"
+        android:paddingRight="5dp"
+        android:paddingTop="20dp"
+        android:text="@string/home"
+        android:textColor="#ffffff"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+ -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:background="@drawable/home_bg">
+	<RelativeLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:background="@color/topTextView"
+		android:id="@+id/terms_condition"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"
+
+		android:layout_height="@dimen/titlelayoutHeight">
+
+		<com.bayer.turfid.CustomTextViewBold
+
+			android:id="@+id/title1"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:text="@string/about"
+			android:textColor="#ffffff"
+			android:textSize="23sp"
+			android:textStyle="bold"
+			android:layout_centerInParent="true"
+			android:gravity="center_vertical|center"
+
+			/>
+
+		<ImageView
+			android:layout_width="@dimen/titleImageWidth"
+			android:layout_height="@dimen/titleImageHeight"
+			android:src="@drawable/bayer_logo"
+			android:id="@+id/img_logo"
+			android:layout_gravity="center"
+			android:layout_marginLeft="@dimen/titleImageMargin"
+			android:layout_alignParentEnd="true"
+			android:layout_centerHorizontal="true"
+			android:layout_centerVertical="true"
+			android:layout_marginRight="10dp"
+			/>
+
+	</RelativeLayout>
+          <WebView
+    		    android:id="@+id/aboutView"
+    		    android:layout_width="fill_parent"
+    	
+    		    android:layout_height="fill_parent"
+    		    android:layout_below="@+id/terms_condition"
+    		    android:linksClickable="true"
+    		    android:background="@drawable/identifyscreen_background"
+			  android:layout_margin="10dp" />
+    
+<!--      <TextView
+	    android:id="@+id/aboutView"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+		android:layout_margin="10dp"
+		android:layout_marginBottom="10dp"
+		android:linksClickable="true"
+		android:gravity="center"
+		android:textColor="@android:color/black"
+		android:autoLink="web|email"
+	    android:background="@drawable/screen_background"
+	    android:layout_below="@+id/title"/>
+ -->     
+</RelativeLayout>
+<!-- </LinearLayout>
+ -->
